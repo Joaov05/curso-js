@@ -1,0 +1,32 @@
+<html>
+    <body>
+        <script>
+            var numeroinicial = + (prompt('Digite o primeiro numero da sua conta: '));
+            var sinal = prompt('Qual o sinal da sua conta? Digite (1) para o sinal de mais(+), digite (2) para o sinal ser de menos(-), digite (3) para o sinal ser de vezes(*) ou digite (4) para o sinal ser de dividido(/).');
+            while(sinal != '1' && sinal != '2' && sinal != '3' && sinal != '4'){
+                alert('Insira um sinal valido');
+               sinal = prompt('Insira um novo sinal:');
+            }
+            var numerofinal = + (prompt(' Digite o ultimo número da sua conta: '));
+
+            var resultado; 
+
+            if(sinal == 1){
+                resultado = numeroinicial + numerofinal;
+                alert('Seu resultado deu: '+resultado);
+            }
+            else if (sinal == 2){
+                resultado = numeroinicial - numerofinal;
+                alert('Seu resultado deu: '+resultado);
+            }
+            else if (sinal == 3){
+                resultado = numeroinicial * numerofinal;
+                alert('Seu resultado deu: '+resultado);
+            }
+            else if(sinal == 4){
+                resultado = numeroinicial / numerofinal;
+                alert('Seu resultado deu: '+resultado);
+            }
+        </script>
+    </body>
+</html>
