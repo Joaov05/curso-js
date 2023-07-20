@@ -1,0 +1,26 @@
+<html>
+    <body>
+        <style>
+            .box{
+               width: 250px;
+               height: 250px;
+               background-color: blue;
+               border-radius: 5px;
+               margin: 1px; 
+            }
+            .anim{
+                transition: 1s;
+                margin: 100px;
+                background-color: purple;
+            }
+        </style>
+        <div class="box"></div>
+        <script>
+            var box= document.querySelectorAll('.box')[0];
+            box.addEventListener('click', box2)
+            function box2(){
+                box.classList.toggle('anim');
+            }
+        </script>
+    </body>
+</html>
