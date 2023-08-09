@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora basica</title>
+</head>
+<style>
+    body{
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: 18px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .caixadetexto{
+        background-color: rgb(255, 255, 59);
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 18px;
+    }
+    form{
+        width: 400px;
+        border: 5px double rgb(213, 2, 255);
+        padding: 30px;
+    }
+</style>
+<body>
+    <form action="form1" id="fg">
+        <p><b>Valor 1: </b></p>
+        <input type="text" name="valor1" id="valor1" class="caixadetexto">
+        <p><b>Valor 2: </b></p>
+        <input type="text" name="valor2" id="valor2" class="caixadetexto">
+        <p><b>Opções</b></p>
+        <input type="radio" name="opc" id="opc1" class="sinal">Soma<br>
+        <input type="radio" name="opc" id="opc2" class="sinal">Subtração<br>
+        <input type="radio" name="opc" id="opc3" class="sinal">Multiplicação<br>
+        <input type="radio" name="opc" id="opc4" class="sinal">Divisão<br>
+        <p><b>Resultado</b></p>
+        <input type="text" name="res" id="res" class="caixadetexto">
+        <input type="button" value="Calcular" name="calc" id="calcular">
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
